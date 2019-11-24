@@ -9,7 +9,7 @@ export class ExceptionHandlerService implements ErrorHandler{
 constructor(private http:HttpClient) { }
 
 handleError(error: Error | HttpErrorResponse | TypeError): void {
-  const webHook = 'https://hooks.slack.com/services/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';
+  const webHook = 'your-webhook-url';
   const moreInfo = {
     author_name : window.location.href,
     color:'#764FA5',
